@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #7332c5e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 32px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    /* pointer-events: none; */
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.navbar .btnlogin{
+    position: relative;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navbar .btnlogin::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 0.85;
+}
+
+/* section */
+
+.section{
+    min-height: 100vh;
+    background: url('./img/fondo2.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* sectionlogin */
+
+.login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background: url('./img/gengar.jpg')no-repeat;
+    background-size: 450px 963px;
+    backdrop-filter: blur(15px);
+    box-shadow: -1px 0 10px rgb(143, 52, 204);
+    border-left: 2px solid rgb(127 88 221 / 80%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    opacity: 0;
+    border-radius: 50px 50px 0 0;
+    pointer-events: none;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.login.active-login {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* .login:hover{
+    transform: scale(1.2);
+    background: url('./img/Charizard.png')no-repeat;
+    background-size: cover;  
+    height: 700px;   
+    width: 100%;
+}
+
+.login #welcome:hover{
+    border-block-end-color: red;
+    border-block-start-color: white;
+    border-right-color: white;
+    border-left-color: red;
+} */
+
+.icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+}
+
+.icon-close i{
+    font-size: 32px;
+    color: #333;
+}
+
+.welcome{
+    width: 300px;
+    height: 350px;
+    background: transparent;
+    border: 2px solid rgba(170, 11, 243, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(173 36 243);
+    border-radius: 50px 5px;
+    padding: 30px 40px;
+}
+
+.welcome h2 {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.welcome .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input{
+    width: 80%;
+    height: 10%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;    
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.remember-forgot a{
+    color: #fff;
+}
+
+.remember-forgot label{
+    color: #fff;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.welcome .btn {
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.welcome .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p{
+ color: white;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+/* pobekola animaneichon */
+
+figure{
+    position: absolute;
+}
+img{
+    position: absolute;
+    left: -180px;
+    bottom: -1150px;
+    scale: 0.3;
+}
